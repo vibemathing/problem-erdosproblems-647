@@ -210,80 +210,100 @@ This file is generated from repository truth and bounded for the web channel. It
     },
     "aliases": [
       "erdos-647",
-      "Erdős Problem #647"
+      "Erdős Problem 647"
     ],
     "allowed_axioms": [
-      "none"
+      "classical-mathematics",
+      "source-explicit-definitions-only"
     ],
     "assumptions": [
-      "No mathematical claim is admitted from the bounty title alone.",
-      "Source status and award status are observations, not mathematical Results."
+      "The current source status “verifiable” and prize value “£25” are source observations, not mathematical Results.",
+      "Statement-faithfulness review must remain separate from any later proof verification."
     ],
     "constraints": {
       "allowed_adapters": [
-        "source-fidelity-review-v1"
+        "source-fidelity-review-v1",
+        "lean-obligation-v1"
       ],
       "allowed_methods": [
-        "discovery"
+        "discovery",
+        "derivation",
+        "computation",
+        "proof",
+        "formalization"
       ],
-      "max_attempts": 1,
+      "max_attempts": 20,
       "runtime": {
-        "max_output_bytes": 262144,
-        "max_retries": 1,
-        "max_transitions": 20,
-        "timeout_seconds": 300
+        "max_output_bytes": 5242880,
+        "max_retries": 3,
+        "max_transitions": 300,
+        "timeout_seconds": 1800
       }
     },
-    "created_at": "2026-09-08T08:24:29Z",
+    "created_at": "2026-09-08T09:35:00Z",
     "definitions": [
       {
-        "definition": "The problem identified by the Project Problem Key and cited source URLs; not yet an admitted mathematical statement.",
-        "term": "draft bounty target"
+        "definition": "All notation, quantifier scope, and mathematical objects are interpreted exactly as stated in the cited Erdős problem and, when present, its pinned formalization.",
+        "term": "source-native interpretation"
       }
     ],
     "domain": {
-      "description": "Draft source-native bounty problem intake; exact mathematical domain remains subject to statement-faithfulness review.",
+      "description": "Positive integers and the divisor-counting function τ.",
       "objects": [
-        "objects explicitly named by the cited problem source"
+        "positive integer",
+        "divisor-counting function",
+        "finite maximum"
       ]
     },
-    "lifecycle": "draft",
+    "lifecycle": "active",
     "msc": [
-      "00A00"
+      "11A25"
     ],
     "problem_id": "problem:erdosproblems-647",
     "quantifiers": [
       {
-        "domain": "an exact, source-faithful ProblemContract for the cited bounty problem",
-        "kind": "find",
+        "domain": "integers n>24 satisfying max_{m<n}(m+τ(m))≤n+2",
+        "kind": "exists",
         "variables": [
-          "reviewed_problem_contract"
+          "n"
         ]
       }
     ],
     "schema_version": "1.0.0",
     "sources": [
       {
-        "retrieved_at": "2026-09-08T08:24:29Z",
-        "source": "Bounty problem source",
-        "source_record_id": "erdosproblems:647",
+        "retrieved_at": "2026-09-08T09:35:00Z",
+        "source": "Erdős Problems current problem page",
+        "source_record_id": "647",
         "url": "https://www.erdosproblems.com/647"
       },
       {
-        "retrieved_at": "2026-09-08T08:24:29Z",
-        "source": "Vibe Mathing Project #2 bounty intake",
-        "source_record_id": "erdosproblems:647",
+        "retrieved_at": "2026-09-08T09:35:00Z",
+        "source": "Formal Conjectures Apache-2.0 formalization",
+        "source_record_id": "FormalConjectures/ErdosProblems/647.lean",
+        "url": "https://github.com/google-deepmind/formal-conjectures/blob/858d0e73105101fbc9f86c6d6dd86bbc6d4d789e/FormalConjectures/ErdosProblems/647.lean"
+      },
+      {
+        "retrieved_at": "2026-09-08T09:35:00Z",
+        "source": "Erdős Problems current machine status",
+        "source_record_id": "647",
+        "url": "https://raw.githubusercontent.com/teorth/erdosproblems/main/data/problems.yaml"
+      },
+      {
+        "retrieved_at": "2026-09-08T09:35:00Z",
+        "source": "Vibe Mathing Project #2 award record",
+        "source_record_id": "erdos-647",
         "url": "https://github.com/users/vibemathing/projects/2"
       }
     ],
     "statement": {
       "language": "en",
-      "text": "Draft bounty intake target(s): Erdős Problem #647. The exact mathematical statement, quantifiers, definitions, assumptions, and acceptance conditions have not yet been frozen; this draft is not research-admitted.",
+      "text": "Let τ(m) denote the number of positive divisors of m. Is there an integer n>24 such that max_{m<n}(m+τ(m))≤n+2?",
       "version": 1
     },
-    "title": "Erdős Problem #647",
-    "updated_at": "2026-09-08T08:24:29Z"
+    "title": "Erdős Problem #647: divisor-count maximum",
+    "updated_at": "2026-09-08T09:35:00Z"
   },
-  "problem_contract_sha256": "dabc2e952d9408c9085aaa45256ba02d577ce2164d579a8461870cc5bd1c6c6e"
+  "problem_contract_sha256": "f0ff2fb69452371475d8c1db9601b8b56ad0ed56fee13ecdedda2e464ec8f705"
 }
 ```

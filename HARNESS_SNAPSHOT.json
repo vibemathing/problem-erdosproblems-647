@@ -1084,12 +1084,12 @@
       "sha256": "3f899616e5b8b6462d6bf3fcbc3a56be6b44a3bdc1730cf35cfc60abb67207a2"
     },
     {
-      "bytes": 9487,
+      "bytes": 10246,
       "layer": "web_channel",
       "mode": "0644",
       "owner": "harness",
       "path": "WEB_CONTEXT_BUNDLE.md",
-      "sha256": "10e5be0b3215a5a2de272419d74e1cc269b57251f4d9dfcf953bcf4c9ca6ab5d"
+      "sha256": "f5e143964ed0781b016949d8bead74315918b0f5b3522114168a847fabada1a4"
     },
     {
       "bytes": 3270,
@@ -1468,12 +1468,12 @@
       "sha256": "08cfe86133ca8225b3909978735af132b1fc81c88612a0d22b51c0cc16b8e00c"
     },
     {
-      "bytes": 1939,
+      "bytes": 2544,
       "layer": "problem_instance",
       "mode": "0644",
       "owner": "problem",
       "path": "problem-library/records/canonical-problems.jsonl",
-      "sha256": "8901f36038e9a76e668834970a509f7db36f08579a423f817698364dd421e89a"
+      "sha256": "ad132c45d899b9c18f0f32c3ec3f86402f2d919fd01c498aea9266c8614eeec9"
     },
     {
       "bytes": 3891,
@@ -1918,9 +1918,9 @@
   ],
   "harness_version": "1.2.4",
   "problem": {
-    "admission": "preview_unadmitted",
-    "contract_sha256": "dabc2e952d9408c9085aaa45256ba02d577ce2164d579a8461870cc5bd1c6c6e",
-    "lifecycle": "draft",
+    "admission": "canonical_admitted",
+    "contract_sha256": "f0ff2fb69452371475d8c1db9601b8b56ad0ed56fee13ecdedda2e464ec8f705",
+    "lifecycle": "active",
     "problem_id": "problem:erdosproblems-647"
   },
   "profile": "web-research-full",
@@ -1941,5 +1941,5 @@
     "source_manifest_sha256": "fedd664f1ac16c5232eb05076b73f2bab566ed672840e7f2af851c77253813b3",
     "worktree_dirty": false
   },
-  "tree_sha256": "9c606f4e7e891fb1471d5b664120d730ec079850bd51738ab13bd580cb740b30"
+  "tree_sha256": "35e924ce2026dbd279c0278819e43f34ffb38f84ea8467c82502466f59706f9e"
 }
